@@ -4,7 +4,8 @@ var Stratum = require('./lib');
 var myCoin = {
     "name": "Ergo",
     "symbol": "ERG",
-    "algorithm": "blake",
+    //"algorithm": "blake",
+    "algorithm": "Autolykos",
     "reward": "POW",
     /* Magic value only required for setting up p2p block notifications. It is found in the daemon
        source code as the pchMessageStart variable.
@@ -17,7 +18,7 @@ var myCoin = {
 
 var pool = Stratum.createPool({
 
-    "coin": ERG,
+    "coin": Ergo,
     "extraNonce1Size": 1,
 
     "address": "9hQWG8Hyb6JbFJpQM2Ky5aVDhzjoTzwQ4poqBiT7UGLXXEYpwkN", //Address to where block rewards are given
