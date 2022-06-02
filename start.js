@@ -27,8 +27,9 @@ var pool = Stratum.createPool({
        or to donations address. Addresses or hashed public keys can be used. Here is an example
        of rewards going to the main pool op, a pool co-owner, and NOMP donation. */
     "rewardRecipients": {
-        "n37vuNFkXfk15uFnGoVyHZ6PYQxppD3QqK": 1.5, //1.5% goes to pool op
-        "mirj3LtZxbSTharhtXvotqtJXUY7ki5qfx": 0.5, //0.5% goes to a pool co-owner
+        "9hQWG8Hyb6JbFJpQM2Ky5aVDhzjoTzwQ4poqBiT7UGLXXEYpwkN": 1, //1% goes to pool op
+        //"mirj3LtZxbSTharhtXvotqtJXUY7ki5qfx": 0.5, //0.5% goes to a pool co-owner
+        //"22851477d63a085dbc2398c8430af1c09e7343f6": 0.1
 
         /* 0.1% donation to NOMP. This pubkey can accept any type of coin, please leave this in
            your config to help support NOMP development. */
