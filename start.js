@@ -5,7 +5,7 @@ var myCoin = {
     "name": "Ergo",
     "symbol": "ERG",
     //"algorithm": "blake",
-    "algorithm": "Autolykos",
+    "algorithm": "Autolykos2",
     "reward": "POW",
     /* Magic value only required for setting up p2p block notifications. It is found in the daemon
        source code as the pchMessageStart variable.
