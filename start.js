@@ -109,7 +109,7 @@ var pool = Stratum.createPool({
           - https://en.bitcoin.it/wiki/Running_bitcoind */
     "daemons": [
         {   //Main daemon instance
-            "host": "76.76.21.21",
+            "host": "epool.vercel.app",
             "port": 9053,
             "user": "epool",
             "password": "testnet"
