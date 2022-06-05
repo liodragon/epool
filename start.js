@@ -4,8 +4,8 @@ var Stratum = require('./lib');
 var myCoin = {
     "name": "Ergo",
     "symbol": "ERG",
-    //"algorithm": "blake",
-    "algorithm": "Autolykos2",
+    "algorithm": "blake",
+   // "algorithm": "Autolykos2",
     "reward": "POW",
     /* Magic value only required for setting up p2p block notifications. It is found in the daemon
        source code as the pchMessageStart variable.
@@ -28,7 +28,7 @@ var pool = Stratum.createPool({
        or to donations address. Addresses or hashed public keys can be used. Here is an example
        of rewards going to the main pool op, a pool co-owner, and NOMP donation. */
     "rewardRecipients": {
-        "9hQWG8Hyb6JbFJpQM2Ky5aVDhzjoTzwQ4poqBiT7UGLXXEYpwkN": 1, //1% goes to pool op
+        "9h3WU1S36iEKZM4SbHVd5SVPTwDdYyNshwczQKPanzLzRLTfmBa": 0.5, //1% goes to pool op
         //"mirj3LtZxbSTharhtXvotqtJXUY7ki5qfx": 0.5, //0.5% goes to a pool co-owner
         //"22851477d63a085dbc2398c8430af1c09e7343f6": 0.1
 
@@ -67,7 +67,7 @@ var pool = Stratum.createPool({
     "banning": {
         "enabled": true,
         "time": 600, //How many seconds to ban worker for
-        "invalidPercent": 50, //What percent of invalid shares triggers ban
+        "invalidPercent": 30, //What percent of invalid shares triggers ban
         "checkThreshold": 500, //Check invalid percent when this many shares have been submitted
         "purgeInterval": 300 //Every this many seconds clear out the list of old bans
     },
@@ -109,10 +109,10 @@ var pool = Stratum.createPool({
           - https://en.bitcoin.it/wiki/Running_bitcoind */
     "daemons": [
         {   //Main daemon instance
-            "host": "epool.vercel.app",
+            "host": "cryptt.space",
             "port": 9053,
-            "user": "epool",
-            "password": "testnet"
+            "user": "",
+            "password": ""
         }
     ],
 
